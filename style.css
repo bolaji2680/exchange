@@ -5,7 +5,7 @@
 }
 
 div.trans {
-    height: 600px;
+    /* height: 600px; */
     /* background-image: url(back.jpg);  */
     background: linear-gradient( 50deg, rgba(38, 36, 36, 0.688), rgba(0, 0, 1, 0.814)), url(back.jpg);
     width: 100%;
@@ -30,7 +30,7 @@ header .first {
     height: 67px;
     width: 70px;
     background-image: url(sett.jpg); 
-    background-size: contain;
+    background-size: cover;
 }
 
 .second p {
@@ -84,9 +84,9 @@ div.forall {
 
 textarea {
     display: block;
-    padding: 5px;
-    width: 500px; 
-    height: 70px;
+    padding: 15px;
+    /* max-width: 700px;   */
+    height: 65px;
     margin: 10px 0;
     border: 1px solid rgb(83, 82, 82);
     border-radius: 10px;
@@ -95,8 +95,8 @@ textarea {
 }
 .inpass{
     display: block;
-    padding: 5px;
-    width: 500px;
+    padding: 5px; 
+    /* max-width: 500px;  */
     height: 40px;
     margin: 10px 0;
     margin-bottom: 25px;
@@ -131,14 +131,26 @@ textarea {
 
 
 
-/* @media (max-width: 900px) {
-    .textarea {
-        width: 300px;
-    }
-}
 
-@media (min-width: 300px) {
-    .textarea {
-        width: 70px;
+@media (max-width: 320px) {
+ /* header {
+    width: 600px;
+    
+ } */
+
+    div.forall{
+    padding-left: 20px;
+
     }
-} */
+
+    .textarea {
+       width: 300px;
+       
+
+
+    }
+
+    .inpass {
+        width: 100%;
+    } 
+}
